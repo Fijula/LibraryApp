@@ -1,0 +1,30 @@
+ <!-- form handling -->
+ <form action="/api/users" method="POST" id="add_user">
+    <div class="new_user">
+        <div class="form-group">
+            <label for="name" class="text-light">Author Name</label>
+            <input type="hidden" name="id" value="">
+            <input type="text" name="name" value="" placeholder="Shiv Khera">
+        </div>
+        <div class="form-group">
+            <label for="Bookname" class="text-light">Book_Name</label>
+            <input type="text" name="bookname" value="" placeholder="You Can Win ">
+        </div>
+        <div class="form-group">
+            <label for="category" class="text-light">Category</label>
+            <div class="radio inline">
+                <input type="radio" id="radio-2" name="category" value="Fiction" >
+                <label for="radio-2" class="radio-label">Fiction</label>
+            </div>
+            <div class="radio inline">
+                <input type="radio" id="radio-3" name="category" value="NonFiction" >
+                <label for="radio-3" class="radio-label">Non-Fiction</label>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <button type="submit" class="btn text-dark update">Save</button>
+        </div>
+
+    </div>
+</form>
